@@ -1,0 +1,134 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#container{
+    background-color: white;
+    text-align: center;
+    margin: 160px 20%;
+}
+#top , #bottom{
+    display: flex;
+}
+.box{
+    border: 2px solid black;
+    height: 200px;
+    width: 500px;
+}
+h1{
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+.button{
+    position:relative;
+    border: 1px solid black;
+    padding: 15px 50px;
+    margin: 0px 195px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px black;
+    background-color: rgb(210, 210, 210);
+    overflow: hidden;
+    cursor:wait;
+}
+a{
+    cursor:wait;
+    position:absolute;
+    width: max-content;
+    color: black;
+    text-decoration: none;
+    top: 7px;
+    left: 30px;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+}
+.button:hover a{
+    color: white;
+}
+
+/* Layout of button 1 */
+
+#slider1{
+    display: inline;
+    position: absolute;
+    height: 33.2px;
+    width: 75px;
+    background-color: royalblue;
+    top: 0px;
+    left: -76px;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+}
+#slider2{
+    display: inline;
+    position: absolute;
+    height: 33.2px;
+    width: 75px;
+    background-color:royalblue;
+    top: 0px;
+    left: 109px;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+}
+#button1:hover #slider1{
+    left: -20px;
+}
+#button1:hover #slider2{
+    left: 55px;
+}
+
+/* Layout of button 2 */
+
+#slider3{
+    display: inline;
+    position: absolute;
+    height: 36px;
+    width: 110px;
+    background-color:royalblue;
+    top: 30px;
+    left: 0px;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+}
+#button2:hover #slider3{
+    top: 0px;
+}
+
+/* Layout of button 3 */
+
+#slider4{
+    border: 2px dashed royalblue;
+    display: inline;
+    position: absolute;
+    height: 4px;
+    width: 70px;
+    background-color:royalblue;
+    top: 16px;
+    left: -53px;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+    transform: rotate(-70deg);
+}
+#button3:hover #slider4{
+    left: 84px;
+}
+#button3:hover a{
+    color: black;
+}
+
+/* Layout of button 4 */
+
+#slider5{
+    display: inline;
+    position: absolute;
+    width: 110px;
+    height: 31.6px;
+    opacity: 0;
+    background-image: linear-gradient(135deg,red,white);
+    top: 0px;
+    left: 0px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+#button4:hover #slider5{
+    opacity: 1;
+}
